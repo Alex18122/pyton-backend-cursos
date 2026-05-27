@@ -40,7 +40,7 @@ def obtener_curso(curso_id: str):
     return curso
 
 # CRUD: Update (Actualizar/Modificar) PUT: modificaremos un recurso que coincida con el ID que mandemos
-@app.get("/cursos/{curso_id}", response_model= Curso)
+@app.put("/cursos/{curso_id}", response_model= Curso)
 def modificar_curso(curso_id: str):
     curso = next((curso for curso in cursos_db if curso.id == curso_id) , None)
     if curso is None:
