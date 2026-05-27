@@ -1,6 +1,5 @@
 # API REST: interfaz de programacion de aplicaciones para compartir recursos
 
-from operator import index
 from typing import List, Optional
 import uuid
 from fastapi import FastAPI, HTTPException
